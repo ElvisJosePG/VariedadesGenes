@@ -13,7 +13,7 @@ if ($numero_de_filas == 1) {
 } else {
     echo "<script>
         alert('FATAL ERROR: Los datos ingresados son incorrectos :(');
-        location.assign('login.php');
+        location.assign('../index.php');
     </script>";
 }
 ?>

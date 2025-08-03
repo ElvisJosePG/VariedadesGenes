@@ -10,6 +10,7 @@
 </head>
 
 <body class="bg-light">
+    <?php include('../componentes/header.php'); ?>
 
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
         <div class="card shadow-lg p-4 rounded-4" style="width: 100%; max-width: 500px;">
@@ -30,6 +31,8 @@
             </form>
         </div>
     </div>
+
+        <?php include('../componentes/footer.php'); ?>
 
     <!-- Bootstrap JS Bundle (Opcional para interactividad) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

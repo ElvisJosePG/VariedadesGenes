@@ -24,40 +24,19 @@
         GROUP BY id_producto
     ) i ON p.id = i.id_producto
 ";
-    $resultado = mysqli_query($conexion, $consulta);
+    $resultado = mysqli_query($conexion, $consulta); //Me esta mandando error en esta linea cuando inicio sesion 
     ?>
 
 
     <!-- HEADER -->
-    <header class="navbar navbar-dark bg-dark px-4 d-flex justify-content-between align-items-center">
-        <span class="navbar-brand mb-0 h1 text-center mx-auto">VARIEDADES GENES</span>
+       <?php include('../componentes/header.php'); ?>
 
-        <div class="dropdown">
-            <!-- Imagen como botón del menú -->
-            <img src="../imagen/logo2.png"
-                alt="Icono menú"
-                class="rounded-circle"
-                data-bs-toggle="dropdown"
-                style="width: 60px; height: 60px; cursor: pointer; object-fit: cover;" />
-
-            <!-- Menú desplegable -->
-            <ul class="dropdown-menu dropdown-menu-end">
-                <li><a class="dropdown-item" href="./registro_producto.php">Agregar productos</a></li>
-                <li><a class="dropdown-item" href="./registro_categoria.php">Agregar categoría</a></li>
-                <li><a class="dropdown-item" href="./login.php">Cerrar sesión</a></li>
-            </ul>
-        </div>
-    </header>
 
 
     <main class="flex-grow-1">
 
-        <!-- SEARCH BAR -->
-        <section class="search-bar container my-4">
-            <input type="text" class="form-control" placeholder="Buscar productos o categorías..." />
-        </section>
+      
 
-   
         <!-- PRODUCTOS -->
         <section class="products container my-5">
             <div class="row justify-content-center g-4">
@@ -85,9 +64,8 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-dark text-white text-center py-4">
-        <p class="mb-0">© 2025 Variedades Genes. Todos los derechos reservados.</p>
-    </footer>
+    
+       <?php include('../componentes/footer.php'); ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

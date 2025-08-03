@@ -11,7 +11,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Ejecutar la consulta
     if (mysqli_query($conexion, $agregar_registro)) { 
-        echo "<div class='alert alert-success' role='alert'>Producto guardado con éxito.</div>";
+        echo "<script>
+                alert('Producto guardado con éxito con imágenes.');
+                window.location.href='home.php';
+              </script>";
+        
     } else {
         echo "<div class='alert alert-danger' role='alert'>Error: " . $agregar_registro . "<br>" . mysqli_error($conexion) . "</div>";  // Usar mysqli_error() para obtener el mensaje de error
     }

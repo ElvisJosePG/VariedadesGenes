@@ -1,11 +1,11 @@
 <?php
 $servidor = "localhost";       
 $usuario = "root";             
-$contraseña = "3123.";          
+$password = "";          
 $bd = "variedadesgenes";              
 
 // Establecer la conexión
-$conexion = new mysqli($servidor, $usuario, $contraseña, $bd);
+$conexion = new mysqli($servidor, $usuario, $password, $bd);
 
 // Verificar la conexión
 if ($conexion->connect_error) {

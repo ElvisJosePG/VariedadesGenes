@@ -29,13 +29,16 @@
 
 
     <!-- HEADER -->
-       <?php include('../componentes/header.php'); ?>
+    <?php include('../componentes/header.php'); ?>
+
+    <?php include('../componentes/menu_categoria.php'); ?>
+
 
 
 
     <main class="flex-grow-1">
 
-      
+
 
         <!-- PRODUCTOS -->
         <section class="products container my-5">
@@ -64,8 +67,8 @@
     </main>
 
     <!-- FOOTER -->
-    
-       <?php include('../componentes/footer.php'); ?>
+
+    <?php include('../componentes/footer.php'); ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

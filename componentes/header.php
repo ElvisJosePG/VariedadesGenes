@@ -1,7 +1,7 @@
 <header class="navbar navbar-dark bg-dark px-4 d-flex justify-content-between align-items-center" style="height: 70px;">
 
     <div>
-        <img src="../imagen/Logo.jpg"
+        <img src="../imagen/logo_circulo.png"
             alt="Icono menú"
             data-bs-toggle="dropdown"
             style="width: 60px; height: 60px; cursor: pointer; object-fit: cover;" />

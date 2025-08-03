@@ -29,7 +29,7 @@
             <ul class="dropdown-menu dropdown-menu-end">
                 <li><a class="dropdown-item" href="./registro_producto.php">Agregar productos</a></li>
                 <li><a class="dropdown-item" href="./registro_categoria.php">Agregar categoría</a></li>
-                <li><a class="dropdown-item" href="./login.php">Cerrar sesión</a></li>
+                <li><a class="dropdown-item" href="../index.php">Cerrar sesión</a></li>
             </ul>
         </div>
     </div>

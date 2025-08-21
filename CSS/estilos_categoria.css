@@ -1,0 +1,22 @@
+.categoria {
+  transition: color 0.2s ease;
+}
+
+.categoria-img {
+  transition: transform 0.2s ease, outline-color 0.2s ease;
+}
+
+.categoria:hover .categoria-img {
+  transform: scale(1.12);
+}
+
+.categoria.active .categoria-img {
+  outline: 3px solid var(--bs-primary);
+  outline-offset: 2px;
+  transform: scale(1.18);
+}
+
+.categoria.active p {
+  color: var(--bs-primary);
+  font-weight: 600;
+}

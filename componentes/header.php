@@ -8,9 +8,13 @@
         <span class="navbar-brand mb-0 h1">VARIEDADES GENES</span>
     </div>
 
-    <div>
-        <input type="text" class="form-control form-control-sm" placeholder="Buscar..." style="width: 500px;" />
-    </div>
+    <form class="d-flex" method="GET" action="home.php">
+        <input type="text" name="buscar" class="form-control form-control-sm me-2"
+            placeholder="Buscar..." style="width: 500px;"
+            value="<?php echo isset($_GET['buscar']) ? htmlspecialchars($_GET['buscar']) : ''; ?>" />
+        <button type="submit" class="btn btn-primary btn-sm">Buscar</button>
+    </form>
+
 
     <div class="d-flex align-items-center gap-4">
         <!-- Carrito -->

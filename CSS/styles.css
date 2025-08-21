@@ -1,0 +1,25 @@
+.categoria {
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.categoria-img {
+  transition: transform 0.2s ease, border 0.2s ease;
+}
+
+/* Hover: aumenta un poco */
+.categoria:hover .categoria-img {
+  transform: scale(1.2);
+}
+
+/* Activa: cuando la categoría está seleccionada */
+.categoria.active {
+  color: #0d6efd; /* Azul Bootstrap */
+  font-weight: bold;
+}
+
+.categoria.active .categoria-img {
+  border: 3px solid #0d6efd;
+  transform: scale(1.3);
+}
+
+
